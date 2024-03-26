@@ -2,10 +2,44 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Leaderboard</title>
-    <script defer="defer" src="main.js"></script>
-  </head>
+    <title>Scoreboard</title>
+    <!-- <script src="https://unpkg.com/lodash@4.17.20"></script> -->
+  <script defer src="runtime.js"></script><script defer src="main.js"></script></head>
   <body>
+   <div class="container">
+    <h1>Leaderboard</h1>
+    <div class="details">
+      <div class="scores-container">
+        <h2 class="heading">
+          Recent scores
+          <!-- <a href="#" class="btn btn-refresh" role="button"></a> -->
+          <button class="btn btn-refresh" type="reset">Refresh</button>
+        </h2>
+        <ul class="scores">
+          <li class="score">
+            <span class="score-details">
+              <span class="person-name">Kelvin:</span>
+              <span class="person-score">90</span>
+            </span>
+          </li>
+          <li class="score">
+            <span class="score-details">
+              <span class="person-name">Kelvin:</span>
+              <span class="person-score">90</span>
+            </span>
+          </li>
+        </ul>
+      </div>
+      <form action="/submit-score" class="score-form" method="post">
+        <h2 class="heading">Add your score</h2>
+        <div class="form-container">
+          <input type="text" placeholder="Your name" class="input-name input">
+          <input type="number" placeholder="Your score" class="input-score input" >
+        </div>
+        <button class="btn btn-submit"  type="submit">Submit</button>
+      </form>
+    </div>
+   </div>
     <script src="main.js"></script>
   </body>
 </html>
