@@ -1,4 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Damion&family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:wght@300;400;500&family=Roboto+Mono&family=Roboto:wght@300;400;700&family=Rubik&family=Tinos:ital@0;1&family=Truculenta:opsz,wght@12..72,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
 body {
   background-color: bisque;
-  /* color: violet; */
+}
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 1rem 2rem;
+  min-height: 40vh;
+  /* border: 1px solid red; */
+}
+.details {
+  width: 80%;
+  min-height: 30vh;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* border: 1px solid red; */
+}
+.scores-container {
+  width: 40%;
+  /* border: 1px solid red; */
+
+}
+.score-form {
+  width: 40%;
+  /* border: 1px solid red; */
+}
+.heading {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+}
+.btn {
+  width: 4rem;
+  height: 1.5rem;
+
+}
+.scores {
+  /* border: 1px solid black; */
+  height: auto;
+  width: 100%;
+}
+.score {
+  width: 100%;
+  height: 1rem;
+  padding: 1rem 0;
+  /* margin: 1rem 0; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.score-details {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* styling the form */
+.score-form {
+  display: flex;
+  flex-direction: column;
+}
+.form-container {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* border: 1px solid black; */
+  /* margin-top: 1rem; */
+}
+.input {
+  width: 70%;
+  height: 2rem;
+  border: none;
+}
+.score:nth-child(even) {
+  background-color: grey;
 }
