@@ -27,7 +27,6 @@ body {
 .scores-container {
   width: 40%;
   /* border: 1px solid red; */
-
 }
 .score-form {
   width: 40%;
@@ -43,9 +42,8 @@ body {
   /* border: 1px solid red; */
 }
 .btn {
-  width: 4rem;
+  width: 8rem;
   height: 1.5rem;
-
 }
 .scores {
   /* border: 1px solid black; */
@@ -88,4 +86,23 @@ body {
 }
 .score:nth-child(even) {
   background-color: grey;
+}
+.error,
+.success {
+  z-index: 100;
+  background-color: green;
+  color: red;
+}
+#new-game-form {
+  width: 80%;
+  margin: auto;
+  height: 3rem;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+#game-name {
+  width: 50%;
 }
