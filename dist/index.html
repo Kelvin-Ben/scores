@@ -3,13 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <title>Scoreboard</title>
-    <!-- <script src="https://unpkg.com/lodash@4.17.20"></script> -->
-    <script defer src="runtime.js"></script>
-    <script defer src="main.js"></script>
-  </head>
+  <script defer src="runtime.js"></script><script defer src="main.js"></script></head>
   <body>
+    <h1 class="main-heading">Leaderboard</h1>
     <div class="container">
-      <h1>Leaderboard</h1>
       <form id="new-game-form">
         <input
           type="text"
@@ -24,23 +21,9 @@
         <div class="scores-container">
           <h2 class="heading">
             Recent scores
-            <!-- <a href="#" class="btn btn-refresh" role="button"></a> -->
             <button class="btn btn-refresh" type="button">Refresh</button>
           </h2>
-          <ul class="scores">
-            <!-- <li class="score">
-              <span class="score-details">
-                <span class="person-name">Kelvin:</span>
-                <span class="person-score">90</span>
-              </span>
-            </li>
-            <li class="score">
-              <span class="score-details">
-                <span class="person-name">Kelvin:</span>
-                <span class="person-score">90</span>
-              </span>
-            </li> -->
-          </ul>
+          <ul class="scores"></ul>
         </div>
         <form class="score-form">
           <h2 class="heading">Add your score</h2>
@@ -49,11 +32,13 @@
               type="text"
               placeholder="Your name"
               class="input-name input"
+              required
             />
             <input
               type="number"
               placeholder="Your score"
               class="input-score input"
+              required
             />
           </div>
           <button class="btn btn-submit" type="submit">Submit</button>
