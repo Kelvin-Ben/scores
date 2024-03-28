@@ -1,6 +1,6 @@
-import { showMessage } from "./handleError";
 import { baseUrl } from "./api";
 // fetch data from endpoint so that the element is created
+
 export const displayScores = async (gameId) => {
   try {
     const response = await fetch(`${baseUrl}games/${gameId}/scores`, {
@@ -18,9 +18,7 @@ export const displayScores = async (gameId) => {
       });
     }
   } catch (error) {
-    // showMessage(error, true);
     console.error("Error fetching scores:", error);
     throw new Error("Failed to fetch scores. Please try again later.");
-    // return null;
   }
 };
