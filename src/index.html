@@ -3,11 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <title>Scoreboard</title>
-    <!-- <script src="https://unpkg.com/lodash@4.17.20"></script> -->
   </head>
   <body>
+    <h1 class="main-heading">Leaderboard</h1>
     <div class="container">
-      <h1>Leaderboard</h1>
       <form id="new-game-form">
         <input
           type="text"
@@ -33,11 +32,13 @@
               type="text"
               placeholder="Your name"
               class="input-name input"
+              required
             />
             <input
               type="number"
               placeholder="Your score"
               class="input-score input"
+              required
             />
           </div>
           <button class="btn btn-submit" type="submit">Submit</button>
