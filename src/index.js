@@ -4,9 +4,7 @@ import { createGame } from "../module/addGame";
 import { addScore } from "../module/addScore";
 import { displayScores } from "../module/getScores";
 
-// console.log(g)
 const scoreForm = document.querySelector(".score-form");
-// console.log(scoreForm);
 const refreshButton = document.querySelector(".btn-refresh");
 
 const gameForm = document.querySelector("#new-game-form");
@@ -23,10 +21,10 @@ gameForm.addEventListener("submit", async (event) => {
   }
 });
 
+const gameId = "Z9nEin1TKlswqA181YJq";
+
 scoreForm.addEventListener("submit", async (event) => {
   event.preventDefault();
-  // const gameId = "8KxQN8JEsLJHjYXAHA4Z ";
-  const gameId = "VJ4h0YHaRn8XrWzKuzF8";
   const userName = document.querySelector(".input-name").value.trim();
   const userScore = document.querySelector(".input-score").value.trim();
   if (userName && userScore) {
@@ -38,6 +36,13 @@ scoreForm.addEventListener("submit", async (event) => {
     }
   }
 });
+const userName = document.querySelector(".input-name");
+const userScore = document.querySelector(".input-score");
+const gameName = document.querySelector("#game-name");
+
 refreshButton.addEventListener("click", async () => {
-  displayScores();
+  displayScores(gameId);
+  userName.value = "";
+  userScore.value = "";
+  gameName.value = "";
 });
