@@ -1,6 +1,4 @@
-// import { showMessage } from "./handleError";
 import { baseUrl } from "./api";
-
 export const createGame = async (gameName) => {
   try {
     const response = await fetch(`${baseUrl}games/`, {
@@ -11,6 +9,7 @@ export const createGame = async (gameName) => {
       body: JSON.stringify({ name: gameName }),
     });
     const responseData = await response.json();
+
     return responseData.result;
   } catch (error) {
     // showMessage("An error occurred. Please try again later", true);
